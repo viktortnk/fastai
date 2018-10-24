@@ -113,7 +113,7 @@ class Vocab():
         "Convert a list of tokens `t` to their ids."
         return [self.stoi[w] for w in t]
 
-    def textify(self, nums:Collection[int]) -> List[str]:
+    def textify(self, nums:Collection[int]) -> str:
         "Convert a list of `nums` to their tokens."
         return ' '.join([self.itos[i] for i in nums])
 
